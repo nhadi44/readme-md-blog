@@ -11,6 +11,7 @@
 |
 */
 
-Route::prefix('about')->group(function() {
-    Route::get('/', 'AboutController@index');
-});
+use Illuminate\Support\Facades\Route;
+use Modules\About\Http\Controllers\AboutController;
+
+Route::get('/about', [AboutController::class, 'aboutpage'])->name('aboutpage.index');
