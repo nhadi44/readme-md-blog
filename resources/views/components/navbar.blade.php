@@ -2,7 +2,7 @@
     <div class="container">
         <div class="d-flex align-items-center justify-content-between w-100">
             <div class="w-100 d-flex align-items-center gap-2">
-                <img src="/icons/markdown.png" alt="readme-md-icon" class="readme-icon">
+                <img src="/assets/icons/markdown.png" alt="readme-md-icon" class="readme-icon">
                 <a href="#" class="navbar-brand">Readme.md</a>
             </div>
             <div class="w-100">
