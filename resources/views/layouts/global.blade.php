@@ -19,7 +19,7 @@
     <x-navbar />
     <main class="container-fluid">
         <div class="row">
-            <div class="col-md-12 py-2">
+            <div class="col-md-12 p-0">
                 @yield('content')
             </div>
         </div>

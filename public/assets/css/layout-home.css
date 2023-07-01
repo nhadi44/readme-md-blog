@@ -4,7 +4,6 @@ html {
 
 .nav-link.active {
     border-bottom: 1px solid black !important;
-    padding: 0;
 }
 
 .nav-link {
@@ -13,4 +12,23 @@ html {
 
 .readme-icon {
     width: 8%;
+}
+
+.heroes-title {
+    font-weight: bold;
+    font-size: 2.8rem;
+}
+
+.heroes-description {
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .heroes-title {
+        font-size: 2rem;
+    }
+
+    .heroes-description {
+        font-size: 1rem;
+    }
 }
