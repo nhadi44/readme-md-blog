@@ -10,6 +10,7 @@ class HomeController extends Controller
 {
     public function homepage()
     {
-        return view('home::index');
+        $number = [01, 02];
+        return view('home::index', compact('number'));
     }
 }

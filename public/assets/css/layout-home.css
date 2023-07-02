@@ -2,6 +2,31 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.sticky-element {
+    position: relative;
+    z-index: 100;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.sticky-background {
+    background-color: #fff !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar .bg-warning {
+    transition: all 0.3s ease-in-out;
+}
+
 .nav-link.active {
     border-bottom: 1px solid black !important;
 }
@@ -23,6 +48,85 @@ html {
     font-size: 1.2rem;
 }
 
+.profile-avatar {
+    width: 8%;
+    border-radius: 50%;
+}
+
+.trending_profile {
+    font-size: 15px;
+}
+
+.tranding_number_text {
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: rgb(206, 206, 206) !important;
+}
+
+.trending_category,
+.post_category {
+    background-color: rgb(223, 223, 223);
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-size: 11px;
+}
+
+.tranding_title,
+.post_title,
+.post_description {
+    font-weight: 600;
+    font-size: 16px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.post_title {
+    font-size: 18px;
+}
+
+.post_description {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.post_profile_name {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.trending_card:hover {
+    background-color: #ffc107;
+    transition: 0.3s ease-in-out;
+}
+
+.trending_card:hover .trending_category {
+    background-color: #212529;
+    color: #fff !important;
+    transition: 0.3s ease-in-out;
+}
+
+.profile-avatar-post {
+    max-width: 5%;
+    border-radius: 50%;
+}
+
+.post_image {
+    max-width: 60%;
+}
+
+.btn_bookmark {
+    border: none;
+    background-color: transparent !important;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn_bookmark:hover {
+    color: #ffc107 !important;
+}
+
 @media screen and (max-width: 768px) {
     .heroes-title {
         font-size: 2rem;
@@ -30,5 +134,13 @@ html {
 
     .heroes-description {
         font-size: 1rem;
+    }
+
+    .trending_date {
+        font-size: 0.6rem;
+    }
+
+    .trending_category {
+        font-size: 0.6rem;
     }
 }
