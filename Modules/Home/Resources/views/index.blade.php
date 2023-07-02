@@ -98,32 +98,42 @@
         </div>
         <section id="post_section" class="container py-5">
             <div class="row">
-                <div class="col-md-8">
-                    <x-post-card>
-                        <x-slot name="post_profile_name">
-                            Hadi Nurhidayat
-                        </x-slot>
-                        <x-slot name="post_title">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
-                            consequuntur minus quo laudantium dolorum porro nihil rerum fuga vitae quibusdam eius,
-                            possimus vero, delectus libero. Officiis dolorum, incidunt, dolorem, rem eligendi dolor sed
-                            earum veritatis consequuntur aspernatur architecto ipsum esse!
-                        </x-slot>
-                        <x-slot name="post_description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates vitae consequatur
-                            eveniet beatae blanditiis ullam mollitia tempore accusantium! Labore repellat perspiciatis
-                            quod dicta eaque id similique! Saepe repudiandae reiciendis illo!
-                        </x-slot>
-                        <x-slot name="post_date">{{ \Carbon\Carbon::now()->format('d M Y') }}</x-slot>
-                        <x-slot name="post_category">Technology</x-slot>
-                        <x-slot name="image_url">
-                            https://images.unsplash.com/photo-1661956600684-97d3a4320e45?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80
-                        </x-slot>
-                    </x-post-card>
+                <div class="col-md-4 mb-4">
+                    <x-category />
+
                 </div>
-                <div class="col-md-4">
-                    <div class="sidebar_wrapper">
-                        <span>sidebar</span>
+                <div class="col-md-8">
+                    <div class="row">
+                        @for ($i = 0; $i < 10; $i++)
+                            <div class="col-md-12 mb-5">
+                                <x-post-card>
+                                    <x-slot name="post_profile_name">
+                                        Hadi Nurhidayat
+                                    </x-slot>
+                                    <x-slot name="post_title">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
+                                        consequuntur minus quo laudantium dolorum porro nihil rerum fuga vitae quibusdam
+                                        eius,
+                                        possimus vero, delectus libero. Officiis dolorum, incidunt, dolorem, rem eligendi
+                                        dolor
+                                        sed
+                                        earum veritatis consequuntur aspernatur architecto ipsum esse!
+                                    </x-slot>
+                                    <x-slot name="post_description">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates vitae
+                                        consequatur
+                                        eveniet beatae blanditiis ullam mollitia tempore accusantium! Labore repellat
+                                        perspiciatis
+                                        quod dicta eaque id similique! Saepe repudiandae reiciendis illo!
+                                    </x-slot>
+                                    <x-slot name="post_date">{{ \Carbon\Carbon::now()->format('d M Y') }}</x-slot>
+                                    <x-slot name="post_category">Technology</x-slot>
+                                    <x-slot name="image_url">
+                                        https://images.unsplash.com/photo-1661956600684-97d3a4320e45?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80
+                                    </x-slot>
+                                </x-post-card>
+                            </div>
+                        @endfor
                     </div>
                 </div>
             </div>

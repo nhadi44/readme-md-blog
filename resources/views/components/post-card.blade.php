@@ -1,4 +1,4 @@
-<div class="row align-items-center justify-content-between">
+<div class="row align-items-center justify-content-between d-sm-flex post_wrapper">
     <div class="col-md-6">
         <div class="d-flex align-items-center gap-2 mb-3">
             <img src="/assets/images/avatar.svg" alt="profile-avatar" class="profile-avatar-post">
@@ -7,7 +7,7 @@
         <h5 class="post_title">
             {{ $post_title }}
         </h5>
-        <h6 class="text-muted post_description mb-3">
+        <h6 class="text-muted post_description mb-3 d-none d-sm-block">
             {{ $post_description }}
         </h6>
         <div class="d-flex justify-content-between align-items-center">
@@ -23,7 +23,7 @@
             </div>
         </div>
     </div>
-    <div class="col-md-6  d-flex justify-content-center">
+    <div class="col-md-6 d-flex justify-content-end mt-3">
         <img src="{{ $image_url }}" alt="" class="post_image">
     </div>
 </div>
